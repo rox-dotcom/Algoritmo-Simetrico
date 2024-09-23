@@ -52,13 +52,15 @@ int main()
 
     int desp = 3;
     string textoCon = sustitucion(leerArchivoTxt(rutaArchivo), desp);
-    cout<<endl << "Sustitucion: " << textoCon << endl;
+    cout << endl
+         << "Sustitucion: " << textoCon << endl;
 
     vector<int> indices = generarIndices(data.length()); // Generar índices basados en la longitud del texto
 
     // Permutar el texto
     string textoPermutado = permutar(data, indices);
-    cout << "Texto permutado: "<<endl << textoPermutado << endl;
+    cout << "Texto permutado: " << endl
+         << textoPermutado << endl;
 
     // Deshacer la permutación
     string textoDeshecho = deshacerPermutacion(textoPermutado, indices);
@@ -66,7 +68,8 @@ int main()
 
     // Encriptar el texto
     string textoEncriptado = encriptar(data, desp, indices);
-    cout << "Texto encriptado: "<<endl << textoEncriptado << endl;
+    cout << "Texto encriptado: " << endl
+         << textoEncriptado << endl;
 
     // Desencriptar el texto
 
